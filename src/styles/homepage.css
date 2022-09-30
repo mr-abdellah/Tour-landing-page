@@ -1,0 +1,75 @@
+.homepage {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7%;
+}
+
+.homepage-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 70%;
+}
+
+.homepage-hero h2 {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 80px;
+    color: #202336;
+}
+
+.homepage-hero p {
+    font-family: Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 27px;
+    color: #202336;
+}
+
+.line {
+    background: #202336;
+    border-radius: 4px;
+    width: 4%;
+    height: 2px;
+}
+
+.inputs {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 10rem;
+    gap: 5%;
+}
+
+
+.inputs select {
+    font-family: Helvetica, sans-serif;
+    width: 35%;
+    height: 4rem;
+    font-style: normal;
+    color: #4A4C53;
+    background-color: transparent;
+    border: 0.8px solid #AFB0B9;
+    border-radius: 6px;
+    outline: none;
+    font-size: 1.3rem;
+}
+
+.homepage button {
+    font-family: 'Mulish', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 21px;
+    color: #FFFFFF;
+    background: #FB8F1D;
+    border: none;
+    border-radius: 8px;
+    padding: 2% 9%;
+    cursor: pointer;
+}
