@@ -2,7 +2,7 @@
     height: 50px;
     width: 100%;
     position: relative;
-    margin-top: 1%;
+    margin: 1% 0;
 }
 
 .nav>.nav-header {
@@ -11,9 +11,11 @@
 
 .nav>.nav-header>.nav-title {
     display: inline-block;
-    font-size: 22px;
-    color: #fff;
-    padding: 10px 10px 10px 10px;
+    width: 3%;
+}
+
+.nav-title img {
+    width: 100%;
 }
 
 .nav>.nav-btn {
@@ -21,16 +23,21 @@
 }
 
 .nav>.nav-links {
-    display: inline;
+    display: flex;
+    align-items: center;
     float: right;
     font-size: 18px;
+    width: 50%;
+    justify-content: space-around;
 }
 
 .nav>.nav-links>a {
     display: inline-block;
     padding: 13px 10px 13px 10px;
     text-decoration: none;
-    color: #B8BECD;
+    color: #b8becd;
+    font-family: sf-medium, sans-serif;
+    font-size: 1.4rem;
 }
 
 .nav>.nav-links>a:hover {
@@ -45,9 +52,45 @@
     display: none;
 }
 
-@media (max-width:600px) {
+#loginLink {
+    font-style: normal;
+    font-weight: 500;
+    color: #fb8f1d;
+    mix-blend-mode: normal;
+    border: 1px solid #fb8f1d;
+    border-radius: 8px;
+    padding: 8px 46px;
+}
+
+#loginLink:hover {
+    background-color: #fb8f1d;
+    color: #fff;
+}
+
+#registerLink {
+    font-weight: 500;
+    color: #ffffff;
+    mix-blend-mode: normal;
+    background: #fb8f1d;
+    border-radius: 8px;
+    padding: 8px 36px;
+    border: 1px solid #fff;
+}
+
+#registerLink:hover {
+    color: #fb8f1d;
+    background-color: #fff;
+    border: 1px solid #fb8f1d;
+}
+
+
+@media (max-width: 600px) {
     .nav {
         margin-top: 3%;
+    }
+
+    .nav>.nav-header>.nav-title {
+        width: 14%;
     }
 
     .nav>.nav-btn {
@@ -58,7 +101,6 @@
     }
 
     .nav>.nav-btn>label {
-
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -79,7 +121,8 @@
         position: absolute;
         display: block;
         background-color: #1abe84;
-        height: 0px;
+        height: 0;
+        width: 100vh;
         transition: all 0.3s ease-in;
         overflow-y: hidden;
         top: 116%;
@@ -118,5 +161,20 @@
     .hide {
         display: none;
         transition: all 0.3s ease-in;
+    }
+
+    #loginLink,
+    #registerLink {
+        font-weight: 500;
+        color: #ffffff;
+        mix-blend-mode: normal;
+        background: #fb8f1d;
+        border-radius: 8px;
+        padding: 8px 36px;
+        width: 10%;
+    }
+
+    #loginLink {
+        margin-bottom: 1%;
     }
 }

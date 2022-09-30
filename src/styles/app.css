@@ -13,3 +13,18 @@ body {
 #root {
     width: 85%;
 }
+
+@font-face {
+    font-family: sf-bold;
+    src: url('../assets/fonts/sf-ui-display-bold.otf');
+}
+
+@font-face {
+    font-family: sf-medium;
+    src: url('../assets/fonts/sf-ui-display-medium.otf');
+}
+
+@font-face {
+    font-family: sf-light;
+    src: url('../assets/fonts/sf-ui-display-light.otf');
+}

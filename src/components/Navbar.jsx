@@ -7,14 +7,16 @@ import { useEffect } from "react";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
-  const [width, setWidth] = useState(0);
+  const [width, setWidth] = useState(window.innerWidth);
+
+  console.log(width);
 
   function linkDisplay(width, open) {
     if (open && width < 600) return "nav-links";
     else if (!open && width < 600) return "hide";
-    //
-    else if (!open && width > 600) return "nav-links";
-    else if (!open && width > 600) return "show";
+
+    else if (width > 600) return "nav-links";
+    // else if (!open && width > 600) return "nav-links";
   }
   const handleClose = () => {
     setOpen(false);
@@ -25,7 +27,6 @@ const Navbar = () => {
       setWidth(window.innerWidth);
     });
   });
-  console.log(width);
   return (
     <div className="nav">
       <input type="checkbox" id="nav-check" />
@@ -55,10 +56,10 @@ const Navbar = () => {
         <NavLink onClick={handleClose} to="/partner">
           Partner
         </NavLink>
-        <Link onClick={handleClose} to="/login">
+        <Link id="loginLink" onClick={handleClose} to="/login">
           Login
         </Link>
-        <Link onClick={handleClose} to="/register">
+        <Link id="registerLink" onClick={handleClose} to="/register">
           Register
         </Link>
       </div>
