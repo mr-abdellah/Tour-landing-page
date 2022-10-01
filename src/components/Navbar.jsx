@@ -12,8 +12,8 @@ const Navbar = () => {
   console.log(width);
 
   function linkDisplay(width, open) {
-    if (open && width < 600) return "nav-links";
-    else if (!open && width < 600) return "hide";
+    if (open && width <= 600) return "nav-links";
+    else if (!open && width <= 600) return "hide";
 
     else if (width > 600) return "nav-links";
     // else if (!open && width > 600) return "nav-links";

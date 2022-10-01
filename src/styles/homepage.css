@@ -1,11 +1,11 @@
-.homepage {
+.homepage-hero {
     width: 100%;
     display: flex;
     justify-content: space-between;
     margin-top: 7%;
 }
 
-.homepage-hero {
+.homepage-hero-wrapper {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -13,16 +13,13 @@
     width: 70%;
 }
 
-.homepage-hero h2 {
+.homepage-hero-wrapper h2 {
     font-family: 'Playfair Display';
-    font-style: normal;
-    font-weight: 700;
     font-size: 64px;
-    line-height: 80px;
     color: #202336;
 }
 
-.homepage-hero p {
+.homepage-hero-wrapper p {
     font-family: Helvetica, sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -72,4 +69,32 @@
     border-radius: 8px;
     padding: 2% 9%;
     cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .homepage {
+        margin-top: 12%;
+    }
+
+    .homepage-hero {
+        flex-direction: column;
+    }
+
+    .homepage-hero-wrapper {
+        gap: 1.2rem;
+        width: 100%;
+    }
+
+    .homepage-hero-wrapper h2 {
+        width: 100%;
+        font-size: 2.5rem;
+    }
+
+    .inputs select {
+        width: 45%;
+    }
+
+    .homepage button {
+        margin-bottom: 4%;
+    }
 }
