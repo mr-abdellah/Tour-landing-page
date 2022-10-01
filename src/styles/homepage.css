@@ -14,7 +14,7 @@
 }
 
 .homepage-hero-wrapper h2 {
-    font-family: 'Playfair Display';
+    font-family: "Playfair Display";
     font-size: 64px;
     color: #202336;
 }
@@ -44,31 +44,70 @@
     gap: 5%;
 }
 
-
 .inputs select {
     font-family: Helvetica, sans-serif;
     width: 35%;
     height: 4rem;
     font-style: normal;
-    color: #4A4C53;
+    color: #4a4c53;
     background-color: transparent;
-    border: 0.8px solid #AFB0B9;
+    border: 0.8px solid #afb0b9;
     border-radius: 6px;
     outline: none;
     font-size: 1.3rem;
 }
 
 .homepage button {
-    font-family: 'Mulish', sans-serif;
+    font-family: "Mulish", sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 21px;
-    color: #FFFFFF;
-    background: #FB8F1D;
+    color: #ffffff;
+    background: #fb8f1d;
     border: none;
     border-radius: 8px;
     padding: 2% 9%;
     cursor: pointer;
+}
+
+/* section 2 styles */
+
+.homepage-section2 {
+    display: flex;
+    align-items: center;
+    gap: 4%;
+    margin-top: 10%;
+}
+
+.homepage-section2 div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.5rem;
+}
+
+.homepage-section2 h1 {
+    font-family: "Playfair Display";
+    font-weight: 700;
+    font-size: 36px;
+    color: #000000;
+    width: 70%;
+}
+
+.homepage-section2 p {
+    font-family: 'Mulish';
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 30px;
+    color: #7D7987;
+}
+
+.homepage-section2 button {
+    font-family: "Mulish", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 21px;
+    padding: 3% 9%;
 }
 
 @media (max-width: 768px) {
@@ -96,5 +135,20 @@
 
     .homepage button {
         margin-bottom: 4%;
+    }
+
+    /* second section mobile style */
+
+    .homepage-section2 {
+        flex-direction: column;
+    }
+
+    .homepage-section2 img {
+        order: 2;
+        width: 100%;
+    }
+
+    .homepage-section2 div {
+        gap: 1rem;
     }
 }
