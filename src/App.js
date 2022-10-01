@@ -9,7 +9,11 @@ function App() {
       <Navbar />
       <Routes>
         <Route path="/" element={<Homepage />} />
-        <Route path="/about" element={<p>hhhh</p>} />
+        <Route path="/destinations" element={ <p>destinations</p>} />
+        <Route path="/about" element={<p>about</p>} />
+        <Route path="/partner" element={ <p>partner</p>} />
+        <Route path="/login" element={ <p>login</p>} />
+        <Route path="/register" element={ <p>register</p>} />
       </Routes>
     </>
   );

@@ -44,7 +44,7 @@ const Navbar = () => {
       </div>
 
       <div className={linkDisplay(width, open)}>
-        <NavLink onClick={handleClose} to="/">
+        <NavLink onClick={ handleClose } to="/Tour-landing-page">
           Home
         </NavLink>
         <NavLink onClick={handleClose} to="/destinations">
