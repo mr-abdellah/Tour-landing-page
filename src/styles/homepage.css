@@ -6,7 +6,7 @@
 }
 
 .homepage-hero-wrapper {
-display: flex;
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
@@ -150,6 +150,41 @@ display: flex;
     align-items: center;
 }
 
+/* section 3 */
+
+.guide-section {
+    display: flex;
+    align-items: center;
+}
+
+.guide-section div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.guide-section h2 {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 50px;
+    color: #000;
+    width: 70%;
+}
+
+.guide-section p {
+    width: 70%;
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 30px;
+    color: #7D7987;
+}
+
 @media (max-width: 768px) {
     .homepage {
         margin-top: 12%;
@@ -211,6 +246,16 @@ display: flex;
         grid-template-rows: repeat(2, 45%);
         place-content: space-between;
         margin-top: 4%;
+    }
+
+    /* section3 */
+
+    .guide-section {
+        flex-direction: column;
+    }
+
+    .guide-section img {
+        width: 100%;
     }
 
 }

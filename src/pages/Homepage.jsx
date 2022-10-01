@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import heroImg from "../assets/hero.svg";
 import section2Img from '../assets/section2.svg';
+import section3Img from '../assets/section3.svg';
 import DestinationCard from "../components/DestinationCard";
 import '../styles/homepage.css';
 import { MdKeyboardArrowRight } from 'react-icons/md';
@@ -88,6 +89,17 @@ const Homepage = () =>
                     { data.map( card => <DestinationCard img={ card.img } country={ card.country } city={ card.city} />
                     ) }
                 </div>
+            </div>
+
+            {/* */ }
+
+            <div className="guide-section">
+                <div>
+                    <h2>Guides by Thousand Sunny</h2>
+                    <p>Packed with tips and advice from our on-the-ground experts, our city guides app (iOS and Android) is the ultimate resource before and during a trip.</p>
+                    <button>Download</button>
+                </div>
+                <img src={ section3Img } alt="section3" />
             </div>
         </div>
     );
