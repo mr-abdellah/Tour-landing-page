@@ -6,11 +6,12 @@
 }
 
 .homepage-hero-wrapper {
-    display: flex;
+display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-evenly;
+    justify-content: center;
     width: 70%;
+    gap: 2%;
 }
 
 .homepage-hero-wrapper h2 {
@@ -40,14 +41,14 @@
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 80%;
+    width: 90%;
     height: 10rem;
     gap: 5%;
 }
 
 .inputs select {
     font-family: Helvetica, sans-serif;
-    width: 35%;
+    width: 46%;
     height: 4rem;
     font-style: normal;
     color: #4a4c53;
