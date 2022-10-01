@@ -1,0 +1,50 @@
+.destinationCard {
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+    position: relative;
+    box-shadow: 1px 1px 3px 1px rgb(0 0 0 / 17%);
+    border-radius: 12px;
+}
+
+.destinationCard img {
+    border-radius: 6px;
+}
+
+.destinationCard div {
+    position: absolute;
+    background: #fff;
+    bottom: 0;
+    padding: 0.7rem;
+    border-top-right-radius: 6px;
+}
+
+.destinationCard div h4 {
+    font-family: "Mulish", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    color: #042521;
+}
+
+.destinationCard div p {
+    font-family: "Mulish", sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    color: #80918E;
+}
+
+@media (max-width:768px) {
+    .destinationCard {
+        width: 100%;
+    }
+
+    .destinationCard div {
+        padding: 0.1rem;
+    }
+
+    .destinationCard div h4 {
+        font-size: 14px;
+        line-height: normal;
+    }
+}
