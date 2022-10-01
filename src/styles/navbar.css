@@ -132,6 +132,22 @@ nav {
     nav {
         position: fixed;
         z-index: 3;
+        height: 4rem;
+        display: flex;
+        justify-content: space-evenly;
+        width: 90%;
+    }
+
+    .logo {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo img {
+        height: 3rem;
+        width: 3rem;
     }
 
     .hamburger {
