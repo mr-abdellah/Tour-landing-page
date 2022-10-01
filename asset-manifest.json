@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/Tour-landing-page/static/css/main.c7b9d51a.css",
+    "main.js": "/Tour-landing-page/static/js/main.00f379d6.js",
+    "static/media/hero.svg": "/Tour-landing-page/static/media/hero.f4c75af0ecec6db426018a80a032185a.svg",
+    "static/media/sf-ui-display-bold.otf": "/Tour-landing-page/static/media/sf-ui-display-bold.4ac567b4926ac8d6459d.otf",
+    "static/media/sf-ui-display-medium.otf": "/Tour-landing-page/static/media/sf-ui-display-medium.32f938759a1b1b8ce03b.otf",
+    "static/media/sf-ui-display-light.otf": "/Tour-landing-page/static/media/sf-ui-display-light.b4ca712946a31ed82045.otf",
+    "static/media/section2.svg": "/Tour-landing-page/static/media/section2.19c15ab687813d2bb5c5edb735f9e072.svg",
+    "static/media/destination2.png": "/Tour-landing-page/static/media/destination2.e007cb39fc34e1b7ad22.png",
+    "static/media/destination4.png": "/Tour-landing-page/static/media/destination4.6c15be70b646a5ac6638.png",
+    "static/media/destination3.png": "/Tour-landing-page/static/media/destination3.bb52c9df5faedea6894c.png",
+    "static/media/destination1.png": "/Tour-landing-page/static/media/destination1.3287c16b3713789b96d8.png",
+    "index.html": "/Tour-landing-page/index.html",
+    "static/media/logo.svg": "/Tour-landing-page/static/media/logo.f70ae7a144344f73d9ed8dd4d8fc3d70.svg",
+    "main.c7b9d51a.css.map": "/Tour-landing-page/static/css/main.c7b9d51a.css.map",
+    "main.00f379d6.js.map": "/Tour-landing-page/static/js/main.00f379d6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c7b9d51a.css",
+    "static/js/main.00f379d6.js"
+  ]
+}
