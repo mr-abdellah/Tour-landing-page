@@ -185,6 +185,17 @@
     color: #7D7987;
 }
 
+/* Testimonials */
+
+.testimonials h2 {
+    font-family: 'Playfair Display';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 50px;
+        color: #000000;
+}
+
 @media (max-width: 768px) {
     .homepage {
         margin-top: 12%;

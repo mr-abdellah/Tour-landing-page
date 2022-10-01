@@ -10,6 +10,7 @@ import des1 from '../assets/destination1.png';
 import des2 from '../assets/destination2.png';
 import des3 from '../assets/destination3.png';
 import des4 from '../assets/destination4.png';
+import Testimonial from "../components/Testimonal/Testimonial";
 //
 
 const Homepage = () =>
@@ -86,7 +87,7 @@ const Homepage = () =>
                 </div>
 
                 <div className="homepage-featured-destinations">
-                    { data.map( card => <DestinationCard img={ card.img } country={ card.country } city={ card.city} />
+                    { data.map( card => <DestinationCard img={ card.img } country={ card.country } city={ card.city } />
                     ) }
                 </div>
             </div>
@@ -101,6 +102,14 @@ const Homepage = () =>
                 </div>
                 <img src={ section3Img } alt="section3" />
             </div>
+
+            {/* */ }
+
+            <div className="testimonials">
+                <h2>Testimonials</h2>
+                <Testimonial />
+            </div>
+
         </div>
     );
 };
