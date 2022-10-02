@@ -1,82 +1,57 @@
 .testimonial {
-    display: flex;
-    justify-content: space-between;
-}
-
-.testimonial_info {
+    width: 30%;
+    height: 15em;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 2%;
-}
-
-.testimonial_info p:nth-child(2) {
-    font-family: 'Mulish';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 36px;
-    color: #000000;
-    width: 70%;
-}
-
-.testimonial_info h4 {
-    font-family: "Mulish", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 22px;
-    color: #000000;
-}
-
-.testimonial_info p:nth-child(4) {
-    font-family: "Mulish", sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 48px;
-    color: rgba(0, 0, 0, 0.85);
-}
-
-.testimonial_img {
-    position: relative;
-}
-
-.testimonial_img img {
-    width: 100%;
-}
-
-.testimonial_btns {
-    background-color: #fff;
-    border-top-left-radius: 12px;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: 25%;
-    height: 13%;
-    display: flex;
+    box-shadow: 1px 1px 5px 1px rgb(0 0 0 / 27%);
+    align-items: center;
     justify-content: space-evenly;
+    padding: 1%;
+    border-radius: 12px;
+}
+
+.testimonial * {
+    font-family: "Mulish", sans-serif;
+    font-size: 1.1rem;
+}
+
+.testimonial_user {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+}
+
+.testimonial_user * {
+    margin: 0;
+}
+
+.testimonial_user h3 {
+    font-size: 1.3rem;
+}
+
+.testimonial_user p {
+    color: #B8BECD;
+    font-size: 0.9rem;
+}
+
+.testimonial_user_img {
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-.testimonial_btns button {
-    background-color: transparent;
-    padding: 0;
+.testimonial_user img {
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    object-fit: cover;
+    border: 3px solid #10a47c;
+
 }
 
-.testimonial_btns button svg {
-    color: #000;
-    font-size: 1.7rem;
-}
-
-@media screen and (max-width:768px) {
+@media (max-width: 768px) {
 
     .testimonial {
-        flex-direction: column;
-    }
-
-    .testimonial_info p:nth-child(2) {
-        font-size: 1rem;
         width: 100%;
     }
 
