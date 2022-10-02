@@ -1,0 +1,21 @@
+.destinations {
+    margin: 7% 0;
+}
+
+.destinations h3 {
+    font-family: "Playfair Display";
+    margin-bottom: 4%;
+}
+
+.destinations_container {
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3vh;
+}
+
+@media (max-width:768px) {
+    .destinations_container {
+        margin-top: 10%;
+    }
+}

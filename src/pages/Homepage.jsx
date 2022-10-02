@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import heroImg from "../assets/hero.svg";
 import section2Img from '../assets/section2.svg';
 import section3Img from '../assets/section3.svg';
-import DestinationCard from "../components/DestinationCard";
+import HomepageDestinationCard from "../components/HomepageDestinationCard";
 import '../styles/homepage.css';
 import { MdKeyboardArrowRight } from 'react-icons/md';
 //Importing images
@@ -90,7 +90,7 @@ const Homepage = () =>
 
           <div className="homepage-featured-destinations">
             {data.map((card) => (
-              <DestinationCard
+              <HomepageDestinationCard
                 img={card.img}
                 country={card.country}
                 city={card.city}
