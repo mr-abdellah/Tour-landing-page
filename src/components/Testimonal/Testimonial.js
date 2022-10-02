@@ -1,7 +1,6 @@
 import { Rating } from "@mui/material";
 import testimonalImg from "../../assets/testimonial.svg";
 import "./testimonial.css";
-import { BiRightArrowCircle, BiLeftArrowCircle } from "react-icons/bi";
 
 const Testimonial = () => {
   return (
