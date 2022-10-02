@@ -52,19 +52,31 @@ const Footer = () => {
         </div>
 
         <div className="social_media">
-          <a href="https://twitter.com/belkaiduus">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://twitter.com/belkaiduus"
+          >
             <RiTwitterFill />
           </a>
-          <a href="https://www.facebook.com/the.belkaidus">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.facebook.com/the.belkaidus"
+          >
             <RiFacebookCircleFill />
           </a>
-          <a href="https://www.instagram.com/">
+          <a target="_blank" rel="noreferrer" href="https://www.instagram.com/">
             <RiInstagramLine />
           </a>
-          <a href="https://www.linkedin.com/in/belkaidus/">
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://www.linkedin.com/in/belkaidus/"
+          >
             <RiLinkedinFill />
           </a>
-          <a href="https://youtube.com/">
+          <a target="_blank" rel="noreferrer" href="https://youtube.com/">
             <RiYoutubeFill />
           </a>
         </div>
