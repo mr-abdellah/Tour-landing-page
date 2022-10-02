@@ -11,6 +11,7 @@ import des2 from '../assets/destination2.png';
 import des3 from '../assets/destination3.png';
 import des4 from '../assets/destination4.png';
 import Testimonial from "../components/Testimonal/Testimonial";
+import StoryCard from "../components/StoryCard/StoryCard";
 //
 
 const Homepage = () =>
@@ -65,7 +66,7 @@ const Homepage = () =>
           </div>
           <img src={heroImg} alt="hero_img" />
         </div>
-        {/* second section */}.{" "}
+        {/* second section */}
         <div className="homepage-section2">
           <img src={section2Img} alt="section2Img" />
           <div>
@@ -117,6 +118,21 @@ const Homepage = () =>
             <Testimonial />
             <Testimonial />
             <Testimonial />
+          </div>
+        </div>
+        {/* */}
+        <div className="homepage_stories">
+          <div className="homepage-bd-title">
+            <h3>Featured destinations</h3>
+            <Link to="/stories">
+              View all <MdKeyboardArrowRight />
+            </Link>
+          </div>
+          <div className="homepage_stories_container">
+            <StoryCard />
+            <StoryCard />
+            <StoryCard />
+            <StoryCard />
           </div>
         </div>
       </div>
