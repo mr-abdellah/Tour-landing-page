@@ -52,19 +52,19 @@ const Footer = () => {
         </div>
 
         <div className="social_media">
-          <a href="">
+          <a href="https://twitter.com/belkaiduus">
             <RiTwitterFill />
           </a>
-          <a href="/">
+          <a href="https://www.facebook.com/the.belkaidus">
             <RiFacebookCircleFill />
           </a>
-          <a href="/">
+          <a href="https://www.instagram.com/">
             <RiInstagramLine />
           </a>
-          <a href="/">
+          <a href="https://www.linkedin.com/in/belkaidus/">
             <RiLinkedinFill />
           </a>
-          <a href="/">
+          <a href="https://youtube.com/">
             <RiYoutubeFill />
           </a>
         </div>
