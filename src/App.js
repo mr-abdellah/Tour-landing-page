@@ -2,6 +2,7 @@ import "./styles/app.css";
 import Navbar from "./components/Navbar/Navbar";
 import { Routes, Route } from "react-router-dom";
 import Homepage from './pages/Homepage';
+import Footer from "./components/Footer/Footer";
 
 function App ()
 {
@@ -17,7 +18,8 @@ function App ()
         <Route path="/login" element={ <p>login</p> } />
         <Route path="/register" element={ <p>register</p> } />
         </Routes>
-      </div>
+        </div>
+        <Footer />
     </>
   );
 }
