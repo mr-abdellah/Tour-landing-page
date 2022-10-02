@@ -80,7 +80,7 @@ h4 {
 
 @media (max-width:768px) {
     .card {
-        width: 45%;
+        width: 90%;
         height: 33vh;
     }
 }
