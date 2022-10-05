@@ -1,27 +1,63 @@
 import "./styles/app.css";
 import Navbar from "./components/Navbar/Navbar";
-import { Routes, Route } from "react-router-dom";
-import Homepage from './pages/Homepage';
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router-dom";
+import Homepage from "./pages/Homepage";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
 import Footer from "./components/Footer/Footer";
 import Destinations from "./pages/Destinations";
+import { Navigate } from "react-router-dom";
 
-function App ()
-{
+const user = JSON.parse(localStorage.getItem("user"));
+
+const Layout = () => {
   return (
     <>
       <Navbar />
-      <div className="app">
-        <Routes>
-        <Route path="/" element={ <Homepage /> } />
-        <Route path="/destinations" element={ <Destinations /> } />
-        <Route path="/about" element={ <p>about</p> } />
-        <Route path="/partner" element={ <p>partner</p> } />
-        <Route path="/login" element={ <p>login</p> } />
-        <Route path="/register" element={ <p>register</p> } />
-        </Routes>
-        </div>
-        <Footer />
+      <Outlet />
+      <Footer />
     </>
+  );
+};
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: user?.loggedIn ?<Layout />:<Navigate to='/login' />,
+    children: [
+      {
+        path: "/",
+        element: <Homepage/>,
+      },
+      {
+        path: "/destinations",
+        element: <Destinations/>,
+      },
+      {
+        path: "/about",
+        element: <h3>hiii about</h3>,
+      },
+      {
+        path: "/partner",
+        element: <h3>hiii</h3>,
+      },
+    ],
+  },
+  {
+    path: "/login",
+    element: user?.loggedIn ? <Navigate to="/" /> : <Login />,
+  },
+  {
+    path: "/register",
+    element: user?.loggedIn ? <Navigate to="/login" /> : <Register />,
+  },
+]);
+
+function App() {
+  return (
+    <div className="app">
+      <RouterProvider router={router} />
+    </div>
   );
 }
 

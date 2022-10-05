@@ -4,12 +4,20 @@ import logo from '../../assets/logo.svg';
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import "../../styles/navbar.css";
+import { useDispatch } from "react-redux";
+import { login, logout } from '../../redux/userSlice';
 
 const Navbar = () => {
+  const dispatch = useDispatch();
   const [open, setOpen] = useState(false);
 
   const handleClick = () => {
     setOpen(!open);
+  };
+
+  const handleLogout = () => {
+    window.location.reload()
+    dispatch(logout());
   };
 
   return (
@@ -56,6 +64,7 @@ const Navbar = () => {
             Register
           </Link>
         </li>
+        <button onClick={handleLogout}>Logout</button>
       </ul>
     </nav>
   );
