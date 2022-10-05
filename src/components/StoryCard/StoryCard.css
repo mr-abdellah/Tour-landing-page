@@ -1,0 +1,46 @@
+.story_card {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 100%;
+}
+
+.story_card * {
+    margin: 0;
+}
+
+.story_card img {
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    height: 15rem;
+    object-fit: cover;
+}
+
+.story_card h3 {
+    font-family: "Mulish", sans-serif;
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 25px;
+    color: #000000;
+}
+
+.story_card p {
+    font-family: "Mulish", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 26px;
+    color: #7D7987;
+}
+
+.story_card a {
+    font-size: 15px;
+    line-height: 28px;
+    color: #FB8F1D;
+}
+
+@media (max-width: 768px) {
+    .story_card {
+        width: 100%;
+    }
+}
