@@ -1,28 +1,22 @@
 import TextField from "@mui/material/TextField";
 import { Link } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { register } from "../redux/userSlice";
 import { useState } from "react";
+import ".././styles/auth.css";
 
 const Register = () => {
   const dispatch = useDispatch();
 
-
-  const registeredUser = useSelector((state) => state.user)
-
-  // console.log(registeredUser);
-
   const [user, setUser] = useState({
-    name: '',
-    email: '',
-    password: '',
+    name: "",
+    email: "",
+    password: "",
   });
 
   const handleChange = (e) => {
-    setUser(prev => ({...prev,[e.target.name]:e.target.value}))
-  }
-
-  // console.log(user);
+    setUser((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+  };
 
   const submitForm = () => {
     dispatch(
@@ -36,8 +30,9 @@ const Register = () => {
   };
   return (
     <div className="register">
-      <h2>Welcome Back {registeredUser?.user?.name} !</h2>
-      <div>
+      <h1>Turrico</h1>
+      <h2>Welcome Back!</h2>
+      <form>
         <TextField
           required
           id="outlined-required"
@@ -68,7 +63,7 @@ const Register = () => {
           name="password"
           onChange={handleChange}
         />
-      </div>
+      </form>
       <button onClick={submitForm}>Sign Up </button>
       <p>
         Do you have an account? <Link to="/login">Login</Link>

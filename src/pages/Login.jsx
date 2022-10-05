@@ -1,14 +1,13 @@
 import TextField from "@mui/material/TextField";
-import { Link, Navigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { useDispatch } from "react-redux";
-import { login, logout } from "../redux/userSlice";
+import { login } from "../redux/userSlice";
+import ".././styles/auth.css";
 
 const Login = () => {
   const dispatch = useDispatch();
   const { register, handleSubmit } = useForm();
-  const currentUser = JSON.parse(localStorage.getItem("user"));
-  console.log(currentUser);
   const submitForm = (data) => {
     dispatch(
       login({
@@ -18,18 +17,14 @@ const Login = () => {
         loggedIn: true,
       })
     );
-    window.location.reload()
-  };
-
-  const handleLogout = () => {
-    window.location.reload()
-    dispatch(logout());
+    window.location.reload();
   };
 
   return (
     <div className="login">
+      <h1>Turrico</h1>
       <h2>Welcome Back !</h2>
-      <div>
+      <form>
         <TextField
           required
           id="outlined-required"
@@ -48,12 +43,11 @@ const Login = () => {
           placeholder="Enter your password"
           {...register("password")}
         />
-      </div>
+      </form>
       <button onClick={handleSubmit(submitForm)}>Login</button>
       <p>
         Don't you have an account? <Link to="/register">Sign up</Link>
       </p>
-      <button onClick={handleLogout}>Logout</button>
     </div>
   );
 };

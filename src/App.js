@@ -23,7 +23,7 @@ const Layout = () => {
 const router = createBrowserRouter([
   {
     path: "/",
-    element: user?.loggedIn ?<Layout />:<Navigate to='/login' />,
+    element: user?.loggedIn ?<Layout />:<Navigate to='/register' />,
     children: [
       {
         path: "/",
